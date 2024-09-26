@@ -15,5 +15,6 @@ exports.getFibonacciNumber = (req, res) => {
     }
 
     const number = fibonacci(n)
-    res.json({ number })
+    const formattedNumber = number.toLocaleString()
+    res.json({ number: formattedNumber })
 }
