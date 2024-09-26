@@ -1,9 +1,10 @@
 const express = require('express')
-const tempRoute = require('./routes/temp')
-const primeRoute = require('./routes/prime')
-const numberRoute = require('./routes/number')
+const tempRoute = require('./api/routes/temp')
+const primeRoute = require('./api/routes/prime')
+const numberRoute = require('./api/routes/number')
 
 const app = express()
+app.use(express.json())
 
 app.use('/api', tempRoute)
 app.use('/api', primeRoute)
