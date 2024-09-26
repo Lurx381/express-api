@@ -1,6 +1,6 @@
 exports.getFibonacciNumber = (req, res) => {
     const n = parseInt(req.query.n)
-    if (isNaN(n) || n < 0 || n > 500) {
+    if (isNaN(n) || n < 0 || n > 50) {
         return res.status(400).json({ error: 'n has to be a positive integer less than 500' })
     }
 
