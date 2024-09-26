@@ -4,7 +4,6 @@ const primeRoute = require('./api/routes/prime')
 const numberRoute = require('./api/routes/number')
 
 const app = express()
-app.use(express.json())
 
 app.use('/api', tempRoute)
 app.use('/api', primeRoute)
