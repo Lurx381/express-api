@@ -28,7 +28,4 @@ app.use('/api', tempRoute)
 app.use('/api', primeRoute)
 app.use('/api', numberRoute)
 
-const port = process.env.PORT || 3000
-app.listen(port, () => {
-  console.log(`API running on port ${port}`)
-})
+module.exports = app;
