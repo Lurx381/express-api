@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
                 <p>Everything you can do with this API:</p>
                 <ul>
                     <li>/api/temp?celsius=25 for converting celsius to scientific unit named kelvin</li>
-                    <li>/prime/limit=10 for prime numbers</li>
+                    <li>/api/prime/limit=10 for prime numbers</li>
                     <li>/api/number?n=45 for Fibonacci numbers</li>
                 </ul>
             </body>
